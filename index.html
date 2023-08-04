@@ -3,32 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Tu Nombre - Portafolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
             background-color: #f0f0f0;
-            margin: 40px;
         }
-        h1 {
+        .navbar {
+            background-color: #007F3C;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .section {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        h1, h2 {
             color: #333366;
         }
         p {
             color: #666666;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Bienvenido a mi página web</h1>
-        <p>Esta es una página web sencilla creada como ejemplo. Puedes modificar el contenido y el estilo como desees.</p>
+    <div class="navbar">
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca-de-mi">Acerca de Mí</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+    <div id="inicio" class="section">
+        <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="programador" width="200" height="200">
+        <h1>Bienvenido a Mi Portafolio</h1>
+        <p>¡Hola! Soy [Tu Nombre], un desarrollador apasionado.</p>
+    </div>
+
+
+    <div id="acerca-de-mi" class="section">
+        <h2>Acerca de Mí</h2>
+        <p>[Tu biografía aquí]</p>
+    </div>
+
+    <div id="portafolio" class="section">
+        <h2>Portafolio</h2>
+        <p>[Detalles de tus proyectos aquí]</p>
+    </div>
+
+    <div id="habilidades" class="section">
+        <h2>Habilidades</h2>
+        <p>[Lista de tus habilidades aquí]</p>
+    </div>
+
+    <div id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>[Información de contacto aquí]</p>
     </div>
 </body>
 </html>
+
+
